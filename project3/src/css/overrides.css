@@ -1,0 +1,25 @@
+@import url(foundation.min.css);
+@font-face {
+  font-family: "consolas";
+  src: url("../fonts/consolas.woff2"); }
+.gray {
+  color: white;
+  background-color: gray; }
+
+.blue {
+  color: black;
+  background-color: cornflowerblue; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4% 4%; }
+
+.newFont {
+  font-family: consolas; }

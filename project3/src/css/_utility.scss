@@ -1,0 +1,134 @@
+@font-face {
+     font-family: 'moon-reg';
+     src: url(../../public/fonts/Moon2.0-Regular.WOFF)
+}
+
+@font-face {
+     font-family: 'moon-light';
+     src: url(../../public/fonts/Moon2.0-Light.WOFF)
+}
+
+@font-face {
+     font-family: 'moon-bold';
+     src: url(../../public/fonts/Moon2.0-Bold.WOFF)
+}
+
+body{
+     margin: 5%;
+     font-weight: bold;
+     background-color: black;
+     color: white;
+     font-size: 80%;
+     display: grid;
+     grid-template-columns: [first] 15% [second] auto [third] 15% [end];
+
+     .main{
+          grid-column-start: first;
+          grid-column-end: end;
+          background-color: #222;
+          margin: -10%;
+          padding: 12%;
+     }
+
+     h1{
+          font-family: 'moon-bold', sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 300%;
+     }
+
+     h2, h3{
+          font-family: 'moon-bold', sans-serif;
+          text-transform: uppercase;
+     }
+
+     h6{
+          font-size: 90%;
+     }
+
+     #my-name{
+          text-align: right;
+          margin-top: -9%;
+          padding-bottom: 3%;
+     }
+
+     ul{
+          text-indent: 9px;
+     }
+
+     span{
+          border-bottom: 2px dashed white;
+     }
+
+     #planet{
+          border-radius: 50%;
+          float: right;
+          width: 100%;
+     }
+
+     a {
+          color: white;
+          border-bottom: 2px dashed white;
+
+     }
+
+     #overcast{
+          width: 100%;
+          margin-bottom: 3%;
+     }
+
+     #sign-up{
+          text-align: center;
+     }
+
+     @media only screen and (min-width: 426px) and (max-width: 768px) {
+
+          p, li{
+               font-size: 150%;
+          }
+
+          h6{
+               padding-bottom: 5%;
+          }
+
+          #planet{
+               width: 60%;
+               shape-outside: circle(50%);
+          }
+
+     }
+
+     @media only screen and (min-width: 769px) {
+
+
+
+          p, li{
+               font-size: 100%;
+          }
+
+          h2{
+               font-size: 200%;
+          }
+
+          h3{
+               font-size: 150%;
+          }
+
+          h6{
+               padding-bottom: 5%;
+          }
+
+          #planet{
+               width: 50%;
+               shape-outside: circle(50%);
+          }
+
+          .main{
+               grid-column-start: second;
+               grid-column-end: third;
+               background-color: #222;
+          }
+
+     }
+}
+

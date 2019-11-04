@@ -1,0 +1,92 @@
+@import url(foundation.min.css);
+@font-face {
+  font-family: 'moon-reg';
+  src: url(../../public/fonts/Moon2.0-Regular.WOFF); }
+@font-face {
+  font-family: 'moon-light';
+  src: url(../../public/fonts/Moon2.0-Light.WOFF); }
+@font-face {
+  font-family: 'moon-bold';
+  src: url(../../public/fonts/Moon2.0-Bold.WOFF); }
+body {
+  margin: 5%;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: 80%;
+  display: grid;
+  grid-template-columns: [first] 15% [second] auto [third] 15% [end]; }
+  body .main {
+    grid-column-start: first;
+    grid-column-end: end;
+    background-color: #222;
+    margin: -10%;
+    padding: 12%; }
+  body h1 {
+    font-family: 'moon-bold', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 300%; }
+  body h2, body h3 {
+    font-family: 'moon-bold', sans-serif;
+    text-transform: uppercase; }
+  body h6 {
+    font-size: 90%; }
+  body #my-name {
+    text-align: right;
+    margin-top: -9%;
+    padding-bottom: 3%; }
+  body ul {
+    text-indent: 9px; }
+  body span {
+    border-bottom: 2px dashed white; }
+  body #planet {
+    border-radius: 50%;
+    float: right;
+    width: 100%; }
+  body a {
+    color: white;
+    border-bottom: 2px dashed white; }
+  body #overcast {
+    width: 100%;
+    margin-bottom: 3%; }
+  body #sign-up {
+    text-align: center; }
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    body p, body li {
+      font-size: 150%; }
+    body h6 {
+      padding-bottom: 5%; }
+    body #planet {
+      width: 60%;
+      shape-outside: circle(50%); } }
+  @media only screen and (min-width: 769px) {
+    body p, body li {
+      font-size: 100%; }
+    body h2 {
+      font-size: 200%; }
+    body h3 {
+      font-size: 150%; }
+    body h6 {
+      padding-bottom: 5%; }
+    body #planet {
+      width: 50%;
+      shape-outside: circle(50%); }
+    body .main {
+      grid-column-start: second;
+      grid-column-end: third;
+      background-color: #222; } }
+
+#top-sign {
+  color: white; }
+
+.form-row {
+  font-size: 150%;
+  margin: -15%; }
+  .form-row label, .form-row legend {
+    color: white;
+    font-family: 'moon-reg', sans-serif;
+    font-size: 150%; }
+
+#buttons {
+  margin-top: 2%; }
